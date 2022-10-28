@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css flexbox</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: azure;
+        }
+        .container{
+            width:900px;
+            height: 500px;
+            background-color: midnightblue;
+            margin:100px auto 0 ;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            flex-wrap: wrap;
+
+            /* display:flex;
+            flex-direction: column;
+            flex-wrap:wrap;
+            justify-content: center;
+            align-items:center ;
+            align-content: space-evenly; */
+        }
+        .item{
+            /* max-width: 100px;
+            min-width:100px;
+            flex-basis:500px;
+            width:100px; */
+            height:100px;
+            background-color: lightskyblue;
+            border-radius: 5px;
+            border: 2px solid midnightblue;
+            display: flex;
+            justify-content: center;
+            align-items:center ;
+            font-size: 2rem;
+
+            /* flex: 3 2 50px; */
+        }
+        .one{
+            order:0;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+        .two{
+            order:0;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+        .three{
+            order:0;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+        .four{
+            order:0;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item one">1</div>
+        <div class="item two">2</div>
+        <div class="item three">3</div>
+        <div class="item four">4</div>
+        <!-- <div class="item four">6</div>
+        <div class="item four">7</div>
+        <div class="item four">8</div>
+        <div class="item four">9</div> -->
+        
+    </div>
+</body>
+</html>
+
